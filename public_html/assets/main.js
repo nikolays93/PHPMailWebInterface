@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
                         .html( data.message )
                         .animate({opacity: 1}, 200);
 
-                    disableSubmit( 30000 );
+                    disableSubmit( $form, 30000 );
                 }
                 else {
                     $('.result', $form)
