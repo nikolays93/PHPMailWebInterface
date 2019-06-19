@@ -1,0 +1,62 @@
+.site-content {
+    font-family: verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-group {
+    padding: 5px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    padding: .5rem .25rem;
+}
+
+label {
+    margin-right: 1rem;
+    font-size: 15px;
+}
+
+button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover, button[disabled] {
+    background-color: #ddd;
+}
+
+.result {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    max-width: 320px;
+}
+
+.result p {
+    margin-bottom: 0.5rem;
+}
+
+.result .summary {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.result.success {
+    color: green;
+}
+
+.result.failure {
+    color: red;
+}
