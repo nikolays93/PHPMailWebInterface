@@ -4,13 +4,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Default Page Title</title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 	<script type="text/javascript" src="assets/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
 	<div class="site-content">
-		<form action="/index.html" data-ajax-action="ajax/mail.php" method="post">
+		<form id="site-form" action="/index.html" data-ajax-action="ajax/mail.php" method="post">
 			<h3>Форма отправки сообщения</h3>
 
 			<div class="form-group">
@@ -44,6 +48,8 @@
 
 			<div class="result"></div>
 		</form>
+
+		<a data-fancybox data-src="#site-form" href="javascript:;">Открыть во всплывающем окне</a>
 	</div>
 </body>
 </html>

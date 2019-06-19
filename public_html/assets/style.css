@@ -1,11 +1,18 @@
-.site-content {
+body {
     font-family: verdana, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+}
+.site-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
     height: 100vh;
+}
+
+.site-content #site-form {
+    display: block !important;
 }
 
 .form-group {
